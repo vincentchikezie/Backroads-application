@@ -8,8 +8,10 @@ import tour6 from "./images/tour-6.jpeg";
 export const pageLinks = [
   { id: 1, href: "#home", text: "home" },
   { id: 2, href: "#about", text: "about" },
-  { id: 3, href: "#service", text: "service" },
-  { id: 4, href: "#tours", text: "tours" },
+  { id: 3, href: "#services", text: "services" },
+  { id: 4, href: "#tours", text: "featured" },
+  { id: 5, href: "/tours", text: "all tours" },
+  { id: 6, href: "/contact", text: "contact" },
 ];
 
 export const socialLinks = [

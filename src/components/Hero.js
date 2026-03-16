@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
+
 const Hero = () => {
   return (
     <section className="hero" id="home">
@@ -7,9 +10,9 @@ const Hero = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
           explicabo debitis est autem dicta.
         </p>
-        <a href="#tours" className="btn hero-btn">
-          explore tours
-        </a>
+        <Button asChild className="hero-btn">
+          <Link to={{ pathname: "/", hash: "#tours" }}>explore tours</Link>
+        </Button>
       </div>
     </section>
   );

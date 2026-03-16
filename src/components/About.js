@@ -1,5 +1,7 @@
 import AboutImg from "../images/about.jpeg";
 import Title from "./Title";
+import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 const About = () => {
   return (
     <section className="section" id="about">
@@ -21,9 +23,9 @@ const About = () => {
             quisquam harum nam cumque temporibus explicabo dolorum sapiente odio
             unde dolor?
           </p>
-          <a href="#about" className="btn">
-            read more
-          </a>
+          <Button asChild>
+            <Link to={{ pathname: "/", hash: "#about" }}>read more</Link>
+          </Button>
         </article>
       </div>
     </section>
